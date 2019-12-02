@@ -1,0 +1,4 @@
+SELECT marka, model FROM samochody WHERE kolor='czerwony'
+________________________________________________________
+UPDATE samochody SET stan='dobry' WHERE rocznik='2003'
+________________________________________________________

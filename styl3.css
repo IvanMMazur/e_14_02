@@ -1,0 +1,32 @@
+* {
+  font-family: Helvetica;
+  /* background-color: red; */
+}
+#lewy, #baner-lewy {
+  float: left;
+  background-color: rgb(130, 69, 85);
+  color: white;
+  width: 30%;
+  height: 200px;
+  text-align: center;
+}
+#baner-prawy, #prawy {
+  float: right;
+  background-color: rgb(130, 69, 85);
+  color: white;
+  width: 70%;
+  height: 200px;
+  text-align: center;
+}
+#glowny, #stopka {
+  background-color: rgb(240, 234, 226);
+  padding: 120px;
+}
+table, th {
+  padding: 10px;
+  border: 1px solid rgb(130, 69, 85);
+  color: rgb(130, 69, 85);
+}
+a {
+  color: rgb(240, 234, 226);
+}

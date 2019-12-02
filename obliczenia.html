@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Stacja paliw</title>
+  <link rel="stylesheet" type="text/css" href="styl3.css">
+</head>
+<body>
+  <div id="baner-lewy">
+    <h1>Stacja Paliw</h1>
+  </div>
+  <div id="baner-prawy">
+    <a href="stacja.html"><img src="home.png"></a>
+    <a href="obliczenia.html"><img src="znak.png"></a>
+  </div>
+  <div id="glowny">
+    <div id="form">
+      <h3>Oblicz koszt paliwa</h3>
+      <p>Rodzaj paliwa (1-benzyna, 2-olej napedowy):</p>
+      <input type="number" size="20" id="first">
+      <p>Ile litrow</p>
+      <input type="number" size="20" id="second"></br>
+      <button type="submit" id="oblicz" onclick="f()">OBLICZ</button>
+      <p id="demo"></p>
+    </div>
+  </div>
+  <div id="lewy">
+    <a href="kwerendy.txt">Pobierz kwerendy</a>
+  </div>
+  <div id="prawy">
+    <img src="samochod.png" alt="samochod">
+  </div>
+  <div id="stopka">
+    <p>Strone opracowal: 12345678910</p>
+  </div>
+  <script>
+    function f() {
+      var a=document.getElementById("first").value;
+      var b=document.getElementById("second").value;
+
+      if (a == 1) {
+        var f=b*3.5;
+        document.getElementById("demo").innerHTML = '<p>koszt kpaliwa: ' + f + ' zł</p>';
+      }
+      else if (a == 2) {
+        var f=b*4;
+        document.getElementById("demo").innerHTML = '<p>koszt paliwa: ' + f + ' zł</p>';
+      }
+      else {
+        document.getElementById("demo").innerHTML = '<p>0 zł</p>'
+      }
+    }
+  </script>
+</body>
+</html>
